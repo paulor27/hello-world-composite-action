@@ -21,6 +21,6 @@ runs:
       shell: bash          
     - run: ls -l
       shell: bash
-    - run: goodbye.sh
-      shell: bash
+    #- run: goodbye.sh
+    #  shell: bash
 
