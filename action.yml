@@ -18,7 +18,8 @@ runs:
           echo '::set-output name=action_echo::enabled'
           echo '::echo::off'
           echo '::set-output name=action_echo::disabled'  
-    - run: echo "::warning file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
+      shell: bash
+- run: echo "::warning file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
       shell: bash
     - run: echo "::debug::DEBUG MESSAGE - PORyy"
       shell: bash
