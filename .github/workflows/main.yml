@@ -13,7 +13,14 @@ jobs:
           who-to-greet: 'POR the Octocat'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
-        
+
+      - run: |
+          pwd
+          ls -l
+          ls -l ./hello-world-docker-action
+          chmod +x ./hello-world-docker-action/entrypoint.sh
+          ls -l ./hello-world-docker-action
+        shell: bash
       - name: Hello world action step
         id: hello
         uses: ./hello-world-docker-action
