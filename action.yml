@@ -12,7 +12,7 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: echo "::debug::DEBUG MESSAGE - PORy"
+    - run: echo "::debug::DEBUG MESSAGE - PORyy"
       shell: bash
     - run: pwd
       shell: bash
