@@ -12,7 +12,9 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - run: ls -l
+    - run: pwd
+      shell: bash
+    - run: ls -lart
       shell: bash
     - run: echo $(echo $RANDOM)
       shell: bash
