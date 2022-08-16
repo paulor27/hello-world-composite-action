@@ -38,12 +38,3 @@ runs:
       shell: bash
     - run: goodbye.sh
       shell: bash
-    steps:
-      - name: Hello world action step
-        id: hello
-        uses: ./hello-world-docker-action
-        with:
-          who-to-greet: 'MonaMonaMona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
