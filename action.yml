@@ -13,7 +13,7 @@ runs:
   using: "composite"
   steps:
     - run: echo "::debug::DEBUG MESSAGE - PORy"
-      shell bash
+      shell: bash
     - run: pwd
       shell: bash
     - run: ls -lart
