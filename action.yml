@@ -12,6 +12,8 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - run: echo "::warning file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
+      shell: bash
     - run: echo "::debug::DEBUG MESSAGE - PORyy"
       shell: bash
     - run: pwd
